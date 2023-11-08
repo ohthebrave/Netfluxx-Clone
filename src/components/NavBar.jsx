@@ -9,7 +9,7 @@ function handleSubmit(e){
 
   return (
     <div className='fixed-top'>
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg bg-light transparent-nav">
         <div className="container-fluid">
           <a className="navbar-brand text-danger fs-1" href="#">Netflix</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
