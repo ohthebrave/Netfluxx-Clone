@@ -2,7 +2,7 @@ import { Flex, Image, Stack } from "@chakra-ui/react";
 
 const TopRated = ({topRated}) => {
 
-    console.log(topRated.results)
+    // console.log(topRated.results)
     return ( 
         <div className="trending">
         <h2 className="p-2">Top Rated Movies</h2>

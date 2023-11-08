@@ -85,7 +85,8 @@ body {
 
   .original_movie {
     padding-left: 0px;
-    overflow-x: scroll;
+    overflow-x: auto;
+    flex-wrap: nowrap;
     overflow: hidden;
     padding-top: 7px;
     padding-bottom: 7px;

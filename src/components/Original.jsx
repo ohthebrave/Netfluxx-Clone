@@ -1,20 +1,19 @@
 import { Flex, Image, Stack } from "@chakra-ui/react";
 
-const Original = ({originals}) => {
+const Original = ({originals, onHandleMovieClick}) => {
 
 // console.log(originals.results);
 
     return ( 
         <div className="original">
             <h2 className="p-2">Netflix Originals</h2>
-            <Flex>
+            <Flex overflowX="auto"  whiteSpace="nowrap" >
                 {originals.results?.map(movie => (
-                    <Stack key={movie.id} className="original_movie">
+                    <Stack key={movie.id} >
                         <Image
-                        
-                        boxSize='250px'
+                        boxSize='150px'
                         objectFit='cover'
-                        src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt="original" />
+                        src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt="original" />
                     </Stack>
                 ))}
             </Flex>

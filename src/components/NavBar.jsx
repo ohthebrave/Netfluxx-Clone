@@ -28,6 +28,7 @@ function NavBar() {
               </li>
             </ul>
             <div className="d-flex" role="search">
+                
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <a className="nav-link fs-4" aria-current="page" href="#">KIDS</a>

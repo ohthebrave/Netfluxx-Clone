@@ -1,6 +1,5 @@
 import { Flex, Image, Stack } from "@chakra-ui/react";
 
-
 const Trending = ({trending}) => {
 
     // console.log(trending.results)
