@@ -8,7 +8,7 @@ const Trending = ({trending}) => {
             <h2 className="p-2">Trending Now</h2>
             <Flex>
                 {trending.results?.map(movie => (
-                    <Stack key={movie.id} className="">
+                    <Stack key={movie.id} className="movies">
                         <Image
                         
                         boxSize='150px'

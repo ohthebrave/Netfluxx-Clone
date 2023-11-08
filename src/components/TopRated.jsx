@@ -8,7 +8,7 @@ const TopRated = ({topRated}) => {
         <h2 className="p-2">Top Rated Movies</h2>
         <Flex>
             {topRated.results?.map(movie => (
-                <Stack key={movie.id} className="">
+                <Stack key={movie.id} className="movies">
                     <Image
                     boxSize='150px'
                     objectFit='cover'

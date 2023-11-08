@@ -38,7 +38,7 @@ const Home = () => {
 
 function HandleSubmit(e) {
     e.preventDefault()
-    console.log(e)
+    console.log(searchValue)
 }
 
   const handleMovieClick = (id) => {

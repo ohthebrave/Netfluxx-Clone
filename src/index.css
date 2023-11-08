@@ -83,7 +83,7 @@ body {
     color: white;
   }
 
-  .original_movie {
+  .movies {
     padding-left: 0px;
     overflow-x: auto;
     flex-wrap: nowrap;
@@ -92,23 +92,23 @@ body {
     padding-bottom: 7px;
   }
 
-  .original_movie::-webkit-scrollbar {
+  .movies::-webkit-scrollbar {
     display: none;
   }
   
-  .original_movie img {
+  .movies img {
     margin-right: 10px;
     height: 150px;
     width: auto;
   }
   
-  .original_movie img {
+  .movies img {
     transition: all 0.2s ease-out;
     cursor: pointer;
   }
   
-  .original_movie img:hover{
-    transform: scale(1.1);
+  .movies img:hover{
+    transform: scale(1.5);
   }
 
   .trending {
