@@ -1,6 +1,8 @@
 import React from 'react';
+import { BsSearch } from "react-icons/bs";
 
-function NavBar() {
+function NavBar({setSearchValue,searchValue, onHandleSearch}) {
+    console.log(searchValue)
   return (
     <div className='fixed-top'>
       <nav className="navbar navbar-expand-lg bg-light">
@@ -27,8 +29,7 @@ function NavBar() {
                 <a className="nav-link active" aria-current="page" href="#">My List</a>
               </li>
             </ul>
-            <div className="d-flex" role="search">
-                
+            <div className="d-flex" role="search">              
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <a className="nav-link fs-4" aria-current="page" href="#">KIDS</a>
@@ -37,6 +38,10 @@ function NavBar() {
                   <a className="nav-link fs-4" aria-current="page" href="#">DVD</a>
                 </li>
               </ul>
+              <form class="d-flex" role="search" onSubmit={onHandleSearch}>
+                <input class="form-control-sm "  type="search" placeholder="Search" aria-label="Search" value={searchValue} onChange={(e)=> setSearchValue(e.target.value)}/>
+                <BsSearch className='nav-item fs-1 pt-3' type="submit"/>
+             </form>
             </div>
           </div>
         </div>

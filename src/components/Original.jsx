@@ -13,7 +13,7 @@ const Original = ({originals, onHandleMovieClick}) => {
                         <Image
                         boxSize='150px'
                         objectFit='cover'
-                        src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt="original" />
+                        src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt="original" onClick={() => onHandleMovieClick(movie.id)}/>
                     </Stack>
                 ))}
             </Flex>
