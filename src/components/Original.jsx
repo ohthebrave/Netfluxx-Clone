@@ -1,8 +1,12 @@
 import { Flex, Image, Stack } from "@chakra-ui/react";
+import { useState } from "react";
 
-const Original = ({originals, onHandleMovieClick}) => {
-
+const Original = ({originals}) => {
+const [select, setSelect] = useState([])
 // console.log(originals.results);
+function handleMovieClick(id) {
+    console.log(id)
+}
 
     return ( 
         <div className="original">
@@ -13,7 +17,7 @@ const Original = ({originals, onHandleMovieClick}) => {
                         <Image
                         boxSize='150px'
                         objectFit='cover'
-                        src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt="original" onClick={() => onHandleMovieClick(movie.id)}/>
+                        src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt="original" onClick={() => handleMovieClick(movie.id)}/>
                     </Stack>
                 ))}
             </Flex>
