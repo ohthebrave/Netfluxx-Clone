@@ -36,7 +36,10 @@ const Home = () => {
     fetchMovies(urlTopRated, setTopRated);
   }, []);
 
-  
+function HandleSubmit(e) {
+    e.preventDefault()
+    console.log(e)
+}
 
   const handleMovieClick = (id) => {
     console.log(id);
@@ -44,7 +47,7 @@ const Home = () => {
 
   return (
     <div>
-      <NavBar searchValue={searchValue} setSearchValue={setSearchValue} />
+      <NavBar searchValue={searchValue} setSearchValue={setSearchValue} onHandleSearch={HandleSubmit} />
       <NowShowing />
       <Original originals={originals} onHandleMovieClick={handleMovieClick} />
       <Trending trending={trending} />

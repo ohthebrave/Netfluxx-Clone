@@ -2,7 +2,11 @@ import React from 'react';
 import { BsSearch } from "react-icons/bs";
 
 function NavBar({setSearchValue,searchValue, onHandleSearch}) {
-    console.log(searchValue)
+    // console.log(searchValue)
+function handleSubmit(e){
+    e.preventDefault()
+}
+
   return (
     <div className='fixed-top'>
       <nav className="navbar navbar-expand-lg bg-light">
@@ -38,9 +42,9 @@ function NavBar({setSearchValue,searchValue, onHandleSearch}) {
                   <a className="nav-link fs-4" aria-current="page" href="#">DVD</a>
                 </li>
               </ul>
-              <form class="d-flex" role="search" onSubmit={onHandleSearch}>
+              <form class="d-flex" role="search" onSubmit={handleSubmit}>
                 <input class="form-control-sm "  type="search" placeholder="Search" aria-label="Search" value={searchValue} onChange={(e)=> setSearchValue(e.target.value)}/>
-                <BsSearch className='nav-item fs-1 pt-3' type="submit"/>
+                <BsSearch className='nav-item fs-1 pt-3' type="submit" onClick={onHandleSearch}/>
              </form>
             </div>
           </div>
