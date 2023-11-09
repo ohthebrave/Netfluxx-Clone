@@ -1,4 +1,4 @@
-import { Flex, Image, Stack } from "@chakra-ui/react";
+
 import { useState } from "react";
 import Display from "./Display";
 
