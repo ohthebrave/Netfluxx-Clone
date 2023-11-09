@@ -7,14 +7,15 @@ const TopRated = ({topRated}) => {
         <div className="trending">
         <h2 className="p-2">Top Rated Movies</h2>
         <Flex>
+            <Stack  className="movies">
             {topRated.results?.map(movie => (
-                <Stack key={movie.id} className="movies">
                     <Image
+                    key={movie.id}
                     boxSize='150px'
                     objectFit='cover'
-                    src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt="original" />
-                </Stack>
+                    src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} alt="original" />          
             ))}
+            </Stack>
         </Flex>
     </div>
      );
