@@ -3,7 +3,7 @@ import React from 'react';
 
 function Display({select}) {
 
-    console.log(select)
+    // console.log(select)
   return (
     <div>
             <div className='display-image'>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsSearch } from "react-icons/bs";
 
-function NavBar({setSearchValue,searchValue, onHandleSearch}) {
+function NavBar({setSearchValue,searchValue}) {
     // console.log(searchValue)
 function handleSubmit(e){
     e.preventDefault()
@@ -11,7 +11,7 @@ function handleSubmit(e){
     <div className='fixed-top'>
       <nav className="navbar navbar-expand-lg bg-light transparent-nav">
         <div className="container-fluid">
-          <a className="navbar-brand text-danger fs-1" href="#">Netflix</a>
+          <a className="navbar-brand text-danger fs-1" href="#">Netfluxx</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -42,10 +42,10 @@ function handleSubmit(e){
                   <a className="nav-link fs-4" aria-current="page" href="#">DVD</a>
                 </li>
               </ul>
-              <form class="d-flex" role="search" onSubmit={handleSubmit}>
+              <div class="d-flex" role="search">
                 <input class="form-control-sm "  type="search" placeholder="Search" aria-label="Search" value={searchValue} onChange={(e)=> setSearchValue(e.target.value)}/>
-                <BsSearch className='nav-item fs-1 pt-3' type="submit" onClick={onHandleSearch}/>
-             </form>
+                <BsSearch className='nav-item fs-2 pt-1' type="submit" />
+             </div>
             </div>
           </div>
         </div>

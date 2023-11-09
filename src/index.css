@@ -78,7 +78,7 @@ body {
   }
 
   .original {
-    height: 34vh;
+    height: 40vh;
     background-color: #111;
     color: white;
     z-index: 10;
@@ -140,3 +140,9 @@ body {
   .transparent-nav{
     opacity: 0.5 !important;
   }
+
+  .search-box {
+    /* height: 100vh; */
+    background-color: black;
+  }
+  

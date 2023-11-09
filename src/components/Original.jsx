@@ -19,7 +19,7 @@ function handleMovieClick(id) {
                 {select !== '' && <Display select={select}/>}
             </div>
             <div className="original">
-                <h2 className="p-2">Netflix Originals</h2>
+                <h2 className="p-2">Netfluxx Originals</h2>
                 <div className="movies">
                     {originals.results?.map(movie => (    
                         <img
