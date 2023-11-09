@@ -4,7 +4,7 @@ const TopRated = ({topRated}) => {
 
     // console.log(topRated.results)
     return ( 
-        <div className="trending">
+        <div className="trending p-2">
         <h2 className="p-2">Top Rated Movies</h2>
         <Flex>
             <Stack  className="movies">
