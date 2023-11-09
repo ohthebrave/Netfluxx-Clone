@@ -2,11 +2,11 @@
 import { useState } from "react";
 import Display from "./Display";
 
-const Original = ({originals}) => {
+const Original = ({originals,onHandleMovieClick}) => {
 const [select, setSelect] = useState('')
 // console.log(originals.results);
 
-function handleMovieClick(id) {
+function handleMouseOver(id) {
     const filteredMovie = originals.results.filter(movie => {
         return movie.id === id;
     })
@@ -27,7 +27,8 @@ function handleMovieClick(id) {
                         boxSize='150px'
                         objectFit='cover'
                         src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} 
-                        alt="original" onMouseOver={() => handleMovieClick(movie.id)}/>
+                        alt="original" onMouseOver={() => handleMouseOver(movie.id)}
+                        onClick={() => onHandleMovieClick(movie.id)}/>
                     ))}
                 </div>
         </div>
