@@ -48,8 +48,7 @@ function HandleSubmit(e) {
   return (
     <div>
       <NavBar searchValue={searchValue} setSearchValue={setSearchValue} onHandleSearch={HandleSubmit} />
-      {/* <NowShowing /> */}
-      <Original originals={originals} onHandleMovieClick={handleMovieClick} />
+      <Original originals={originals} onHandleMovieClick={handleMovieClick} NowShowing={NowShowing}/>
       <Trending trending={trending} />
       <TopRated topRated={topRated} />
     </div>

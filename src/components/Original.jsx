@@ -21,16 +21,13 @@ function handleMovieClick(id) {
             <div className="original">
                 <h2 className="p-2">Netflix Originals</h2>
                 <div className="movies">
-                    {originals.results?.map(movie => (
-                            
-                            <img
-                            key={movie.id}
-                            boxSize='150px'
-                            objectFit='cover'
-                            src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} 
-                            alt="original" onClick={() => handleMovieClick(movie.id)}/>
-                        
-                        
+                    {originals.results?.map(movie => (    
+                        <img
+                        key={movie.id}
+                        boxSize='150px'
+                        objectFit='cover'
+                        src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} 
+                        alt="original" onMouseOver={() => handleMovieClick(movie.id)}/>
                     ))}
                 </div>
         </div>
