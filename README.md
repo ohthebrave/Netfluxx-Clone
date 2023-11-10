@@ -1,4 +1,4 @@
-# React Immersive Code Challenge: Bot Battlr
+# Netfluxx Movie Site
 
 Welcome to Netfluxx Movie site,a site built using React.js, Chakra UI && tmdb api. The site is one and only place in the known universe where you can live stream movies for free your, anywhere and at your comfort! 
 
