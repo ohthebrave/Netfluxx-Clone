@@ -53,7 +53,7 @@ const Home = () => {
   const handleMovieClick = (id) => {
     getMovieTrailer(id);
   };
-  console.log(embedMovie.key)
+  console.log(embedMovie)
 
   const getMovieRequest = async (searchValue) => {
 		const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=263d22d8`;

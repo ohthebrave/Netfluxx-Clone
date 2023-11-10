@@ -1,5 +1,6 @@
 import React from 'react';
 import { BsSearch } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 function NavBar({setSearchValue,searchValue}) {
     // console.log(searchValue)
@@ -18,13 +19,13 @@ function handleSubmit(e){
           <div className="collapse navbar-collapse fw-bold lh-1" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                <Link className="nav-link active" aria-current="page" to={'/'} >Home</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">TV Shows</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Movies</a>
+                <Link className="nav-link active" aria-current="page" to={'/movies'}>Movies</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">New & Popular</a>
