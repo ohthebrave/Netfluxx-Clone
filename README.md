@@ -61,7 +61,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ## Development and Setup.
 
 
-Fetch data from a external server running JSON DB server.
+Fetch data from a external server running by using a fetch api call.
 
 'http://www.omdbapi.com/'
 
