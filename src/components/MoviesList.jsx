@@ -29,14 +29,17 @@ function MoviesList() {
   return (
     <div>
         <NavBar/>
-        <div className="mt-5">
+        <div className="container row mx-auto mt-5">
                     {movies.results?.map(movie => (    
-                        <img
-                        key={movie.id}
-                        boxSize='150px'
-                        objectFit='cover'
-                        src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} 
-                        alt="original"/>
+                        <div className='col-md-3 mt-5'>
+                            <img
+                                className='img-fluid mb-3 '
+                                key={movie.id}
+                                boxSize='150px'
+                                objectFit='cover'
+                                src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} 
+                                alt="original"/>
+                        </div>
                     ))}
                 </div>
     </div>
